@@ -18,13 +18,13 @@ int main(void){
 
 
 	/*move_forward(sensor_data,50); //checkpoint 2
-	turn_right(sensor_data,90);
-	move_forward(sensor_data,50);
-	turn_right(sensor_data,90);
-	move_forward(sensor_data,50);
-	turn_right(sensor_data,90);
-	move_forward(sensor_data,50);
-	turn_right(sensor_data,90);*/
+	turn_right(sensor_data,90);//turn right
+	move_forward(sensor_data,50);//move 50 cm
+	turn_right(sensor_data,90);//turn right
+	move_forward(sensor_data,50);// move 50 cm
+	turn_right(sensor_data,90);//turn right
+	move_forward(sensor_data,50);//move 50cm
+	turn_right(sensor_data,90);//turn right*/
 
 	//checkpoint 3
 	/*int dist = 0; // distance traveled
