@@ -10,7 +10,7 @@
 #include "timer.h"
 
 void move_forward(oi_t *sensor, int centimeters){
-    oi_setWheels(500,500); //move forward full speed, 500mm/s
+    oi_setWheels(300,300); //move forward full speed, 500mm/s
 	int sum = 0;
 	while(sum < centimeters * 10){ //while we are still moving
 		oi_update(sensor);
@@ -21,7 +21,7 @@ void move_forward(oi_t *sensor, int centimeters){
 }
 
 void move_backward(oi_t *sensor, int centimeters){
-    oi_setWheels(-500,-500); //move backward full speed, 500mm/s
+    oi_setWheels(-300,-300); //move backward full speed, 500mm/s
 	int sum = centimeters * 10;
 	while(sum > 0){ //while we are still moving
 		oi_update(sensor);
@@ -33,7 +33,7 @@ void move_backward(oi_t *sensor, int centimeters){
 
 void turn_right(oi_t *sensor, int degrees){
 	degrees = -1 * degrees;
-    oi_setWheels(-200,200);
+    oi_setWheels(-150,150);
     int sum = 0;
     while(sum > degrees){
         oi_update(sensor);
@@ -44,9 +44,9 @@ void turn_right(oi_t *sensor, int degrees){
 }
 
 void turn_left(oi_t *sensor, int degrees){
-    oi_setWheels(200,-200);
+    oi_setWheels(150,-150);
     int sum = 0;
-    while(sum > degrees){
+    while(sum < degrees){
         oi_update(sensor);
         sum += sensor -> angle;
     }
