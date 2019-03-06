@@ -1,0 +1,9 @@
+Lab 6 Correction
+
+Correction to lab manual at bottom of page 2: the function prototype for adc_read should be:
+
+int adc_read(void);
+
+(Or some other unsigned integer type for returning the digital result.)
+
+Note that if you write your function to read multiple samples from the sample sequencer, you may have a different return type or instead use a call by reference parameter for returning values.

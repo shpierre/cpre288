@@ -19,7 +19,6 @@ extern volatile int len; // number of chars printed this line
 
 /**
  * main.c
- * Prints the button that has been pressed
  */
 int main(void)
 {
